@@ -1,7 +1,7 @@
 name: "👤 User Story"
 description: "사용자 관점의 기능 요구사항을 기술합니다"
 title: "[STORY-XXX] "
-types: "[Story]"
+type: "[Story]"
 
 body:
 
