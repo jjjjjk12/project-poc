@@ -1,26 +1,13 @@
-name: "User Story"
+name: "👤 User Story"
 description: "사용자 관점의 기능 요구사항을 기술합니다"
 title: "[STORY-XXX] "
-
-name: "👤 User Story"
-description: "사용자 관점의 기능 요구사항을 작성합니다"
-title: "[STORY] "
-labels: ["user-story"]
 
 body:
 
   - type: markdown
     attributes:
       value: |
-        ## 👤 User Story 작성
-
-        아래 항목을 순서대로 입력해주세요.
-
-        ```
-        As a [사용자 유형],
-        I want to [원하는 기능],
-        so that [기대하는 가치/이유].
-        ```
+        ## 👤 User Story
 
   - type: input
     id: as_a
@@ -40,31 +27,11 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     id: so_that
     attributes:
       label: 💡 so that (기대 효과 / 이유)
       description: 왜 이 기능이 필요한지 작성해주세요
       placeholder: 예) 다른 사용자와 빠르게 소통할 수 있도록
-    validations:
-      required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        --- 
-        ## 🧾 Preview
-
-        입력한 내용은 아래와 같이 하나의 User Story로 해석됩니다:
-
-  - type: textarea
-    id: preview
-    attributes:
-      label: 📝 User Story (자동 조합해서 작성)
-      description: 위 내용을 기반으로 최종 문장을 완성해주세요
-      value: |
-        As a ...,
-        I want to ...,
-        so that ...
     validations:
       required: true
